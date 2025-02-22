@@ -1,46 +1,83 @@
 # Tic-Tac-Toe Game
 
-## Overview
-This is a simple command-line implementation of the classic Tic-Tac-Toe game. Two players take turns placing their marks (X or O) on a 3x3 grid. The game ends when one player forms a winning sequence or when the board is full, resulting in a tie.
+## 🏆 About the Project
+Tic-Tac-Toe is a classic two-player game where players take turns marking a 3x3 grid with 'X' or 'O'. The goal is to form a horizontal, vertical, or diagonal line with three of their marks. This project is a **Java-based console application** that simulates the game with a simple yet interactive user experience.
 
-## Features
-- Two-player mode
-- Board visualization
-- Turn-based gameplay
-- Win condition checking
-- Detects ties when the board is full
+## 🎮 Features
+✅ Two-player turn-based gameplay  
+✅ Dynamic board updates after each move  
+✅ Win condition detection (row, column, diagonal)  
+✅ Tie detection when the board is full  
+✅ Simple command-line interface  
 
-## How to Play
-1. Players take turns entering row and column numbers (0-based index) to place their piece.
-2. The game board updates after every move.
-3. If a player completes a row, column, or diagonal with their mark, they win.
-4. If all positions are filled and no winner is found, the game ends in a tie.
+## 🛠️ Technologies Used
+- Java (Core Logic & Game Implementation)
+- IntelliJ IDEA (Development Environment)
+- GitHub (Version Control)
 
-## Setup and Installation
+## 🚀 Getting Started
 ### Prerequisites
-- Java installed on your system
-- IntelliJ IDEA (or any Java IDE)
-- Git (for version control)
+Ensure you have the following installed:
+- **Java 8+** (Check version: `java -version`)
+- **Git** (Check version: `git --version`)
 
-### Steps to Run
-1. Clone the repository:
+### Installation & Running the Game
+1. **Clone the Repository:**
    ```sh
    git clone https://github.com/aayushkr03/TicTacToe.git
    ```
-2. Open the project in IntelliJ IDEA.
-3. Compile and run `TicTacToeGame.java`.
+2. **Navigate to the Project Directory:**
+   ```sh
+   cd TicTacToe
+   ```
+3. **Compile and Run the Game:**
+   ```sh
+   javac TicTacToeGame.java
+   java TicTacToeGame
+   ```
 
-## Code Structure
-- `TicTacToeGame.java` - Main class handling game logic
-- `Board.java` - Handles board representation and piece placement
-- `Player.java` - Represents a player
-- `PlayingPiece.java` - Abstract class for pieces (X and O)
-- `PlayingPieceX.java` - Represents X pieces
-- `PlayingPieceO.java` - Represents O pieces
+## 🎲 How to Play
+1. The game starts with an empty 3x3 board.
+2. Players take turns entering the **row** and **column** (0-based index) to place their mark.
+3. The board updates, and the system checks for a winner.
+4. The game continues until a player wins or all positions are filled (tie).
+5. The result is displayed at the end.
 
-## Contributing
-Feel free to fork the repository and submit pull requests for improvements.
+### Example Gameplay
+```
+Player1 (X), enter row,column: 0,0
+Player2 (O), enter row,column: 1,1
+Player1 (X), enter row,column: 0,1
+Player2 (O), enter row,column: 2,2
+Player1 (X), enter row,column: 0,2
+Player1 Wins! 🎉
+```
 
-## License
-This project is licensed under the MIT License.
+## 📂 Project Structure
+```
+TicTacToe/
+│── src/
+│   ├── TicTacToeGame.java  # Main game logic
+│   ├── Board.java          # Board structure & rules
+│   ├── Player.java         # Player details
+│   ├── PlayingPiece.java   # Abstract class for game pieces
+│   ├── PlayingPieceX.java  # 'X' piece implementation
+│   ├── PlayingPieceO.java  # 'O' piece implementation
+│── README.md               # Documentation
+```
+
+## 🤝 Contributing
+Want to improve this project? Contributions are welcome!  
+1. **Fork the repository**
+2. **Create a feature branch** (`git checkout -b feature-name`)
+3. **Commit changes** (`git commit -m 'Added new feature'`)
+4. **Push to GitHub** (`git push origin feature-name`)
+5. **Open a pull request**
+
+## 📜 License
+This project is licensed under the **MIT License** – feel free to use and modify it! 🎉
+
+---
+
+⭐ **Enjoy playing Tic-Tac-Toe!** Have fun coding! 🚀
 
